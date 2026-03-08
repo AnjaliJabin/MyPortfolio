@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#A9A49F;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.card h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #59425A;
+    font-size: 24px;
+    position: relative;
+    padding-left: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.card h2::before {
+    position: absolute;
+    left: 0;
+}
+
+.top-header {
+    background:#2C2D2A;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    margin-top: 15px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.card {
+    background: #EEEEEC;
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    border: 4px solid #958A8A;
+    box-shadow: 0 8px 25px #968F88;
+}
+
+.center {
+    text-align: center;
+    color: #70596f;
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.about {
+    font-size: 18px;
+    text-align: justify;
+    color: #555;
+    background:#BFB4AD;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #746448;
+    margin: 20px 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+    color: #555;
+    padding: 12px 15px;
+    background: #D9D4C8;
+    border-radius: 8px;
+    border-left: 3px solid #ABA38F;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background: #B1B4BB;
+    color: white;
+    transform: translateX(5px);
+}
+
+ul li b {
+    color: #3C4341;
+    font-weight: 600;
+}
+
+a {
+    color: #6C6D74;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #262E36;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    margin: 25px 0;
+    border-radius: 2px;
+    background-color: #BF9675;
+}
+
+.fade-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    background: #5C5551;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #E2E2DE;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border:1px solid #848484;
+}
+
+.details-table th {
+    text-align: left;
+    padding: 15px;
+    width: 35%;
+    font-weight: 600;
+    color: white;
+    background: #979086;
+}
+
+.details-table td {
+    padding: 15px;
+    color: #555;
+    border: 1px solid #848484;
+}
+
+.details-table tr:hover {
+    background: #B3B3B3
+}
+
+p {
+    text-align: justify;
+    line-height: 1.8;
+    margin: 15px 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 25px;
+    }
+    
+    .title {
+        font-size: 28px;
+    }
+    
+    .navbar a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
